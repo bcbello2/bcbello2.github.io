@@ -1,0 +1,202 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 3fr, 2fr, 3fr;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.topborder {
+    display: flex;
+    height: 25px;
+    width: 100vw;
+    background-color: #284780;
+    position: absolute;
+    top: 0%;
+}
+
+.header {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1, 5;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.logoandtitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoandtitle a {
+    text-decoration: none;
+}
+
+.logoandtitle h2 {
+    color: black;
+}
+
+.logoandtitle p {
+    color: black;
+}
+
+.homelink {
+    display: flex;
+    flex-direction: row;
+}
+
+.titles {
+    padding-left: 50px;
+}
+
+.titles h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #284780;
+}
+
+.titles h2 {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 38px;
+}
+
+.titles p {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 5px;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar a:hover {
+    color: #284780;
+}
+
+.menu {
+    flex-direction: row;
+}
+
+.header ul {
+    display: flex;
+    width: 100%;
+}
+
+.header li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 1%;
+    width: 100px;
+}
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 110px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.main h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #284780;
+
+}
+.main p{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.banner {
+    height: 100px;
+    background-color: #284780;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.surgerypic img{
+    width: 80%
+}
+.surgerypic {
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    position: relative;
+    padding-top: 10px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #284780;
+}
+
+@media only screen and (max-width: 600px) {
+    .topborder {
+        width: 100vw;
+    }
+
+    .banner {
+        width: 100vw;
+        margin-top: 0;
+    }
+
+    .navbar ul {
+        display: none !important;
+    }
+
+    .slicknav_menu {
+        display: block;
+        background-color: #284780;
+        position: relative;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-right: 50px;
+        width: 100vw;
+    }
+
+    .slicknav_menutxt {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    .slicknav_nav a {
+        display: block;
+        max-width: 100px;
+        position: relative;
+        color: white;
+        background-color: #284780;
+    }
+
+    .slick_nav a:hover {
+        background-color: white;
+        color: #284780;
+    }
+
+    .slicknav_nav ul {
+        margin-left: 40vw;
+        text-align: center;
+        margin-top: 1rem;
+        position: relative;
+        display: block !important;
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+    }
+    .main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+}
