@@ -304,7 +304,7 @@
     border-bottom: 50px solid #284780;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
     .wrapper {
         display: flex;
         flex-direction: column;
